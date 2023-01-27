@@ -1,0 +1,8 @@
+.logo {
+    color: red;
+    font-size: 2rem;
+}
+.nav {
+    display: grid;
+    gap: 1rem;
+}
