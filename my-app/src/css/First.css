@@ -1,0 +1,42 @@
+.vid {
+    width: 100%;
+    height: 100vh;
+    filter: blur(4px);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1 {
+    position: absolute;
+    top: 20rem;
+    color: white;
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+button {
+    position: absolute;
+    top: 45rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    width: 8vw;
+    height: 5vh;
+    background: -webkit-linear-gradient(wheat, tomato);
+    color: aqua;
+}

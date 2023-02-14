@@ -1,8 +1,24 @@
+body {
+    overflow-x: hidden;
+}
 .logo {
-    color: red;
+    color: rgb(223, 13, 83);
     font-size: 2rem;
 }
 .nav {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.nav a {
+    color: rgb(223, 13, 83);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.nav a:hover {
+    text-decoration: dashed;
+    color: black !important;
 }
