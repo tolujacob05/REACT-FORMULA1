@@ -10,6 +10,7 @@ import {
     useAnimationFrame
 } from 'framer-motion';
 import { wrap } from "@motionone/utils";
+/*import logo from '..//F1 images/logo.png';*/
 
 interface ParallaxProps {
     children: string;
@@ -56,6 +57,20 @@ function ParallaxText ({ children, baseVelocity = 100 }: ParallaxProps) {
     )
 }
 
+const navVariants = {
+    hidden: {
+        opacity: 0, 
+        x: '-100vw'
+    },
+    visible: {
+        opacity: 1, 
+        x: '-10vh',
+        y: '5vh',
+        transition: {
+            delay: 1.5, duration: 1.5, type: 'spring', stiffness: 60
+        }
+    }
+}
 
 
 const Nav = () => {
@@ -65,7 +80,19 @@ const Nav = () => {
                 <ParallaxText baseVelocity={10}>FORMULA 1</ParallaxText>
                 <ParallaxText baseVelocity={-10}>FORMULA 1</ParallaxText>
             </div>
-            <div className='nav'>
+            <motion.div className='nav'
+                variants={navVariants}
+                initial={'hidden'}
+                animate={'visible'}
+                whileHover={{ 
+                    scale: 1.1, 
+                    textShadow: "0px 0px 8px rgb(255,255,255)",
+                    transition: {
+                        duration: 0.3
+                    }
+                }}
+            >
+                <a href='home'>HOME</a>
                 <a href='about'>ABOUT</a>
                 <a href='history'>HISTORY</a>
                 <a href='drivers'>DRIVERS</a>
@@ -73,8 +100,9 @@ const Nav = () => {
                 <a href='gridgrandprix'>GRID AND GRAND PRIX</a>
                 <a href='pictures&videos'>PICTURES AND VIDEOS</a>
                 <a href='me'>ME</a>
-            </div>
+            </motion.div>
         </>
+        
     )
 }
 
