@@ -1,4 +1,4 @@
-import ExpertBilberry1 from '..//F1 Videos/ExpertBilberry1.mp4';
+import formula1vid1 from '..//F1 Videos/formula1vid1.mp4';
 import '../css/First.css';
 import { Link } from 'react-router-dom'
 
@@ -7,7 +7,7 @@ const First = () => {
         <>
             <div className='vid'>
                 <div className='overlay'></div>
-                <video src={ExpertBilberry1} autoPlay loop muted />
+                <video src={formula1vid1} autoPlay loop muted />
 
             </div>
             <div className='text'>
