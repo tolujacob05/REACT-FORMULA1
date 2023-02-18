@@ -75,7 +75,7 @@ const navVariants = {
 
 const Nav = () => {
     return (
-        <>
+        <div className='big'>
             <div className='logo'>
                 <ParallaxText baseVelocity={10}>FORMULA 1</ParallaxText>
                 <ParallaxText baseVelocity={-10}>FORMULA 1</ParallaxText>
@@ -101,7 +101,7 @@ const Nav = () => {
                 <a href='pictures&videos'>PICTURES AND VIDEOS</a>
                 <a href='me'>ME</a>
             </motion.div>
-        </>
+        </div>
         
     )
 }
